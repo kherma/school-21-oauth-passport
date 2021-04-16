@@ -40,6 +40,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/auth", require("./routers/auth.routes"));
+
 app.use("/user", require("./routers/user.routes"));
 
 app.use("/", (req, res) => {
